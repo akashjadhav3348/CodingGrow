@@ -95,6 +95,7 @@
 /*** Topbar End ***/
 
 
+
 /*** Navbar Start ***/
 /* Navbar background and link color */
 .navbar {
@@ -390,64 +391,90 @@
 
     }
 }
+
 /*** Carousel End ***/
 
-
-/*** Services Start ***/
-
-.services .services-item {
-    box-shadow: 0 0 60px rgba(0, 0, 0, .2);
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    padding: 10px 0;
-    position: relative;
+/*** About Start ***/
+.btn-secondary:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    transition: 0.4s;
 }
 
+/*** About End ***/
 
-.services-content::after {
+/*** Courses Start ***/
+
+.course-card {
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 2px solid transparent;
+}
+
+.course-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.course-card img {
+    transition: transform 0.4s ease;
+    height: 250px;
+    object-fit: cover;
+}
+
+.course-card:hover img {
+    transform: scale(1.1);
+}
+
+.course-overlay {
     position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
     top: 0;
     left: 0;
-    border-radius: 10px 10px 0 0;
-    background: rgba(3, 43, 243, 0.8);
-    transition: .5s;
-}
-
-.services-content::after {
-    top: 0;
-    bottom: auto;
-    border-radius: 10px 10px 10px 10px;
-}
-
-.services-item:hover .services-content::after {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
     height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.course-card:hover .course-overlay {
     opacity: 1;
-    transition: .5s;
 }
 
-.services-item:hover .services-content-icon {
-    position: relative;
-    z-index: 2;
+.course-badge {
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
-.services-item .services-content-icon i,
-.services-item .services-content-icon p {
-    transition: .5s;
+
+/* Blinking highlight animation */
+.highlight-course {
+    animation: blink-border 2s infinite;
 }
 
-.services-item:hover .services-content-icon i {
-    color: var(--bs-secondary) !important;
+@keyframes blink-border {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #0d6efd;
+        box-shadow: 0 0 15px rgba(13, 110, 253, 0.5);
+    }
+
+    100% {
+        border-color: transparent;
+    }
 }
 
-.services-item:hover .services-content-icon p {
-    color: var(--bs-white);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .course-card img {
+        height: 200px;
+    }
 }
 
-/*** Services End ***/
+/*** Courses End ***/
 
 
 /*** Project Start ***/
@@ -662,8 +689,8 @@
 /*** Team End ***/
 
 .counter-value {
-  font-size: 2.5rem;
-  font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 /*** Testimonial Start ***/
