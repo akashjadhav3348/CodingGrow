@@ -30,23 +30,43 @@
 <body>
 
     <!-- Topbar -->
-    <div class="container-fluid bg-dark d-none d-md-block py-2 px-4">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-white">
-            <div class="d-flex flex-wrap align-items-center mb-2 mb-md-0">
-                <small class="me-3"><i class="fas fa-map-marker-alt text-secondary me-2"></i>Fn-3, 2nd Floor, Noble
-                    Manchester, Narhe, Pune</small>
-                <small><i class="fas fa-envelope text-secondary me-2"></i>www.codinggrow.com</small>
-            </div>
-            <div class="d-flex align-items-center">
-                <small class="me-3 animate__animated animate__pulse animate__infinite">🚀 Get Your Career
-                    Solution</small>
-                <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+    <div class="container-fluid bg-dark d-none d-md-block">
+        <div class="rounded topbar">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center  gap-2">
+                <!-- Left Info -->
+                <div class="top-info d-flex flex-wrap align-items-center">
+                    <small class="me-3 text-white">
+                        <i class="fas fa-map-marker-alt me-2 text-secondary bg-white rounded-circle p-1"></i>
+                        Fn -3, 2nd Floor, Noble Manchester, Narhe, Pune
+                    </small>
+                    <small class="me-3 text-white">
+                        <i class="fas fa-envelope me-2 text-secondary"></i>
+                        www.codinggrow.com
+                    </small>
+                </div>
+
+                <!-- Animated Note -->
+                <div id="note" class="text-secondary d-none d-xl-block">
+                    <small class="text-white fs-6 fw-bold p-2 animate__animated animate__flash animate__infinite">Get
+                        Your Career Solution</small>
+                </div>
+
+                <!-- Social Links -->
+                <div class="top-link d-flex align-items-center">
+                    <a href="#" class="bg-light btn btn-sm-square rounded-circle me-2">
+                        <i class="fab fa-facebook-f text-primary"></i>
+                    </a>
+                    <a href="#" class="bg-light btn btn-sm-square rounded-circle me-2">
+                        <i class="fab fa-instagram text-primary"></i>
+                    </a>
+                    <a href="#" class="bg-light btn btn-sm-square rounded-circle">
+                        <i class="fab fa-linkedin-in text-primary"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-
+    <!-- End of Topbar -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
         <div class="container">
@@ -60,7 +80,7 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="service.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Courses.html">Courses</a></li>
                     <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -162,7 +182,7 @@
         </div>
     </div>
 
-  <!-- Fact Start -->
+    <!-- Fact Start -->
     <div class="container-fluid bg-secondary py-5">
         <div class="container">
             <div class="row g-4 text-center">
@@ -221,92 +241,61 @@
     <!-- Fact End -->
 
     <!-- Footer -->
-<div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
-            <div class="container pt-5 pb-4">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <a href="index.html">
-                            <h1 class="text-white fw-bold d-block"> <span class="text-primary">Coding</span><span
-                                    class="text-secondary">Grow</span> </h1>
-                        </a>
-                        <p class="text-white mt-3">Empowering your career with hands-on training, real projects, and
-                            dedicated placement support. </p>
-                        <p class="text-white mt-3">
-                            Join us to learn, grow, and succeed in the IT industry.</p>
+  <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html">
+                        <h1 class="text-white fw-bold d-block"> <span class="text-primary">Coding</span><span class="text-secondary">Grow</span> </h1>
+                    </a>
+                    <p class="text-white mt-3">Empowering your career with hands-on training, real projects, and dedicated placement support.</p>
+                    <p class="text-white mt-3">Join us to learn, grow, and succeed in the IT industry.</p>
 
-                        <div class="d-flex align-items-center mt-4">
-                            <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
-                                    class="fab fa-facebook-f text-primary"></i></a>
-                            <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
-                                    class="fab fa-instagram text-primary"></i></a>
-                            <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i
-                                    class="fab fa-linkedin-in text-primary"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="h3 text-secondary">Short Link</a>
-                        <div class="mt-4 d-flex flex-column short-link">
-                            <a href="#" class="mb-2 text-white"><i
-                                    class="fas fa-angle-right text-secondary me-2"></i>About
-                                us</a>
-                            <a href="#" class="mb-2 text-white"><i
-                                    class="fas fa-angle-right text-secondary me-2"></i>Contact
-                                us</a>
-                            <a href="#" class="mb-2 text-white"><i
-                                    class="fas fa-angle-right text-secondary me-2"></i>Our
-                                Courses</a>
-                            <a href="#" class="mb-2 text-white"><i
-                                    class="fas fa-angle-right text-secondary me-2"></i>Our
-                                Projects</a>
-                            <a href="#" class="mb-2 text-white"><i
-                                    class="fas fa-angle-right text-secondary me-2"></i>Latest
-                                Blog</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="h3 text-secondary">Help Link</a>
-                        <div class="mt-4 d-flex flex-column help-link">
-                            <a href="" class="mb-2 text-white"><i
-                                    class="fas fa-angle-right text-secondary me-2"></i>Terms
-                                Of use</a>
-                            <a href="" class="mb-2 text-white"><i
-                                    class="fas fa-angle-right text-secondary me-2"></i>Privacy
-                                Policy</a>
-                            <a href="" class="mb-2 text-white"><i
-                                    class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
-                            <a href="" class="mb-2 text-white"><i
-                                    class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
-                            <a href="" class="mb-2 text-white"><i
-                                    class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="h3 text-secondary">Contact Us</a>
-                        <div class="text-white mt-4 d-flex flex-column contact-link">
-                            <a href="#" class="pb-3 text-light border-bottom border-primary"><i
-                                    class="fas fa-map-marker-alt text-secondary me-2"></i>Fn -3 ,2 floar Noble
-                                manchester, Narhe pune</a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i
-                                    class="fas fa-phone-alt text-secondary me-2"></i>+91 8149920201</a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i
-                                    class="fas fa-envelope text-secondary me-2"></i>www.codinggrow.com</a>
-                        </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                        <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
                     </div>
                 </div>
-                <hr class="text-light mt-5 mb-4">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start">
-                        <span class="text-light"><a href="#" class="text-secondary"><i
-                                    class="fas fa-copyright text-secondary me-2"></i>www.codinggrow.com,</a> All right
-                            reserved.</span>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Quick Links</a>
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="index.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Home</a>
+                        <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About Us</a>
+                        <a href="Courses.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Courses</a>
+                        <a href="project.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Projects</a>
+                        <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <span class="text-light">Designed By <a class="text-secondary"
-                                href=" WWW.codinggrow.com">CodingGrow</a></span>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Help Link</a>
+                    <div class="mt-4 d-flex flex-column help-link">
+                        <a href="#" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
+                        <a href="#" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                        <a href="#" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FAQs</a>
+                        <a href="#" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Support</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Contact Us</a>
+                    <div class="text-white mt-4 d-flex flex-column contact-link">
+                        <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i>Fn -3, 2nd Floor, Noble Manchester, Narhe, Pune</a>
+                        <a href="tel:+918149920201" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>+91 814 992 0201</a>
+                        <a href="mailto:info@codinggrow.com" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i>info@codinggrow.com</a>
                     </div>
                 </div>
             </div>
+            <hr class="text-light mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>2024 CodingGrow</a>, All rights reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <span class="text-light">Designed by <a class="text-secondary" href="#">CodingGrow Team</a></span>
+                </div>
+            </div>
         </div>
+    </div>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top">
