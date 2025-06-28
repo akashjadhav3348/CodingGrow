@@ -79,15 +79,29 @@
     position: relative;
     display: inline-block;
     animation: mymove 5s infinite;
-    animation-timing-function: all;
+    white-space: nowrap;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px;
+
 }
 
+
 @keyframes mymove {
-    from {
+    0% {
         left: -100%;
     }
-
-    to {
+    25% {
+        left: 20%;
+    }
+    50% {
+        left: 50%;
+    }
+    75% {
+        left: 75%;
+    }
+    100% {
         left: 100%;
     }
 }
