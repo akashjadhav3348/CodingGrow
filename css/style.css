@@ -325,10 +325,6 @@
 }
 
 
-#carouselId .carousel-indicators li:hover {
-    background: var(--bs-secondary);
-}
-
 /* Buttons inside carousel */
 .carousel-caption .carousel-content a button {
     padding: 10px 25px;
@@ -889,118 +885,80 @@
 /*** Testimonial End ***/
 
 /*** Contact Section Responsive Styling ***/
-
-.contact-detail::before {
-    content: "";
-    position: absolute;
-    height: 50%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(rgba(210, 243, 235, 1), rgba(230, 250, 245, 0.3)),
-        url(../img/background.jpg) center/cover no-repeat;
-    border-radius: 10px;
-    z-index: -1;
-}
-
-.contact-map,
-.contact-form {
-    background: #d46e26;
-    border-radius: 12px;
-}
-
-/* Font sizes using clamp() for responsiveness */
-h1,
-.contact-title {
-    font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
-    font-weight: 700;
-}
-
-h4,
-h5 {
-    font-size: clamp(1.1rem, 1.5vw, 1.5rem);
-    font-weight: 600;
-}
-
-p,
-.contact-form input,
-.contact-form textarea,
-.contact-form a,
-.contact-detail a {
-    font-size: clamp(0.95rem, 1.2vw, 1.15rem);
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Form input and textarea styles */
-.contact-form input,
-.contact-form textarea {
-    border: none;
-    border-radius: 6px;
-    padding: 12px 16px;
-    transition: all 0.3s ease-in-out;
-    font-size: inherit;
-    width: 100%;
-    box-shadow: none;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(212, 110, 38, 0.25);
-    border-color: #d46e26;
-}
-
-/* Button styling */
-.contact-form button {
-    border-radius: 6px;
-    font-size: 1rem;
-    padding: 0.75rem 2rem;
-    transition: background 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #bd5a1a;
-}
-
-/* Info Card Styling */
-
-/* Contact detail section */
-.contact-detail .d-flex {
-    align-items: center;
-}
-
-.contact-detail .btn-square {
-    width: 64px;
-    height: 64px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 767.98px) {
-
-    .contact-map,
-    .contact-form {
-        padding: 1.5rem;
-    }
-
-    .contact-detail .d-flex {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    a {
-        font-size: 0.8rem !important;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-}
-
+        /* Custom Styles */
+        .contact-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/contact-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 300px;
+        }
+        
+        .contact-icon-box {
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            height: 100%;
+        }
+        
+        .contact-icon-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+        
+        .contact-form {
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .form-control {
+            border-radius: 8px;
+            padding: 12px 15px;
+            border: 1px solid #eee;
+        }
+        
+        .form-control:focus {
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+            border-color: #0d6efd;
+        }
+        
+        .btn-send {
+            padding: 12px 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: #0d6efd;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 /*** Contact Section Responsive Styling End ***/
 
 
